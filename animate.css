@@ -1764,8 +1764,8 @@
 @-webkit-keyframes flip {
   from {
     -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -360deg);
-    transform: perspective(400px) rotate3d(0, 1, 0, -360deg);
-    -webkit-animation-timing-function: ease-out;
+    transform: perspective(400px) rotate3d(0, 1, 0, -360deg);/*指定3D 转换360度*/
+    -webkit-animation-timing-function: ease-out;/*规定过渡效果的速度曲线为规定以慢速结束的过渡效果*/
     animation-timing-function: ease-out;
   }
 
@@ -1838,7 +1838,7 @@
 .animated.flip {
   -webkit-backface-visibility: visible;
   backface-visibility: visible;
-  -webkit-animation-name: flip;
+  -webkit-animation-name: flip;/*指定动画名称为flip*/
   animation-name: flip;
 }
 
